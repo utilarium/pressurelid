@@ -1,6 +1,6 @@
 {
   "name": "@theunwalked/pressurelid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Safe regex handling with ReDoS protection - keeps dangerous patterns under pressure.",
   "type": "module",
   "main": "./dist/pressurelid.cjs",
