@@ -9,7 +9,7 @@ interface MarkdownRendererProps {
 
 const MarkdownRenderer = ({ content }: MarkdownRendererProps) => {
     // Remove the first h1 from the markdown content only if it's "Pressurelid" to avoid duplicate headings
-    const processedContent = content.replace(/^#\s+@theunwalked\/pressurelid\s*$/mi, '')
+    const processedContent = content.replace(/^#\s+@utilarium\/pressurelid\s*$/mi, '')
 
     return (
         <ReactMarkdown

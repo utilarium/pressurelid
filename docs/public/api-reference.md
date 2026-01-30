@@ -119,7 +119,7 @@ function createSafeRegex(
 **Example:**
 
 ```typescript
-import { createSafeRegex } from '@theunwalked/pressurelid';
+import { createSafeRegex } from '@utilarium/pressurelid';
 
 const { safe, regex, error } = createSafeRegex('^[a-z]+$', 'i');
 ```
@@ -135,7 +135,7 @@ function globToSafeRegex(glob: string): SafeRegexResult
 **Example:**
 
 ```typescript
-import { globToSafeRegex } from '@theunwalked/pressurelid';
+import { globToSafeRegex } from '@utilarium/pressurelid';
 
 const { safe, regex } = globToSafeRegex('**/*.md');
 ```
@@ -151,7 +151,7 @@ function escapeForRegex(str: string): string
 **Example:**
 
 ```typescript
-import { escapeForRegex } from '@theunwalked/pressurelid';
+import { escapeForRegex } from '@utilarium/pressurelid';
 
 const escaped = escapeForRegex('a.b*c');
 // Returns: 'a\\.b\\*c'
@@ -175,7 +175,7 @@ import {
   type SafeRegexConfig,
   type SafeRegexResult,
   type SafeRegexReason,
-} from '@theunwalked/pressurelid';
+} from '@utilarium/pressurelid';
 ```
 
 ## Pattern Detection
@@ -216,7 +216,7 @@ General patterns that can cause exponential backtracking:
 ## Error Handling
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex();
 

@@ -33,7 +33,7 @@ The pattern `^(a+)+$` contains nested quantifiers. When the input doesn't match,
 ### File Loader
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex();
 
@@ -54,7 +54,7 @@ function loadFiles(ignorePatterns: string[]) {
 ### Search Feature
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 async function search(userPattern: string, files: string[]) {
   const safe = new SafeRegex({ timeoutMs: 500 });
@@ -82,7 +82,7 @@ async function search(userPattern: string, files: string[]) {
 ### With Audit Logging
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex({
   onBlock: (message, pattern) => {

@@ -14,20 +14,20 @@ Regular expressions are powerful but dangerous. User-provided patterns can freez
 ## Installation
 
 ```bash
-npm install @theunwalked/pressurelid
+npm install @utilarium/pressurelid
 ```
 
 Or with your preferred package manager:
 
 ```bash
-yarn add @theunwalked/pressurelid
-pnpm add @theunwalked/pressurelid
+yarn add @utilarium/pressurelid
+pnpm add @utilarium/pressurelid
 ```
 
 ## Quick Start
 
 ```typescript
-import { SafeRegex, createSafeRegex, globToSafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex, createSafeRegex, globToSafeRegex } from '@utilarium/pressurelid';
 
 // Basic usage
 const safe = new SafeRegex();
@@ -49,7 +49,7 @@ const globResult = globToSafeRegex('**/*.md');
 ## Example: Protecting User Search
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex();
 

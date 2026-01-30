@@ -5,7 +5,7 @@ Tune pressurelid for your specific use case.
 ## Default Configuration
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex({
   maxLength: 500,      // Maximum pattern length
@@ -157,7 +157,7 @@ const configResult = configSafe.create(configPattern);
 ## Environment-Based Configuration
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const config = {
   production: { maxLength: 200, timeoutMs: 100 },

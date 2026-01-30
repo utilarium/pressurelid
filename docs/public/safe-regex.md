@@ -5,7 +5,7 @@ The SafeRegex class is the main API for creating and validating regex patterns.
 ## Constructor
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex({
   maxLength: 500,        // Maximum pattern length (default: 500)
@@ -192,7 +192,7 @@ const result = safe.create(dangerousPattern);
 ## Full Example
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 // Configure with audit logging
 const safe = new SafeRegex({

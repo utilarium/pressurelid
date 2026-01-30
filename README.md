@@ -1,8 +1,8 @@
-# @theunwalked/pressurelid
+# @utilarium/pressurelid
 
 Safe regex handling with ReDoS protection. Keeps dangerous patterns under pressure.
 
-[![npm version](https://img.shields.io/npm/v/@theunwalked/pressurelid.svg)](https://www.npmjs.com/package/@theunwalked/pressurelid)
+[![npm version](https://img.shields.io/npm/v/@utilarium/pressurelid.svg)](https://www.npmjs.com/package/@utilarium/pressurelid)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
 
 ## Why pressurelid?
@@ -17,13 +17,13 @@ Regular expressions are powerful but dangerous. User-provided patterns can freez
 ## Installation
 
 ```bash
-npm install @theunwalked/pressurelid
+npm install @utilarium/pressurelid
 ```
 
 ## Quick Start
 
 ```typescript
-import { SafeRegex, createSafeRegex, globToSafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex, createSafeRegex, globToSafeRegex } from '@utilarium/pressurelid';
 
 // Basic usage
 const safe = new SafeRegex();

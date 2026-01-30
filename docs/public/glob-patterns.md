@@ -5,7 +5,7 @@ Pressurelid provides safe conversion of glob patterns to regex, commonly used fo
 ## Basic Usage
 
 ```typescript
-import { SafeRegex, globToSafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex, globToSafeRegex } from '@utilarium/pressurelid';
 
 // Using the class
 const safe = new SafeRegex();
@@ -88,7 +88,7 @@ const files = allFiles.filter(f =>
 ### File Loader
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 import { readdirSync } from 'fs';
 
 const safe = new SafeRegex();
@@ -121,7 +121,7 @@ const files = loadFiles('./src', [
 ### Configuration Loading
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex();
 
@@ -179,7 +179,7 @@ The conversion process generates regex patterns that are typically safe, but the
 For simple usage, use the standalone function:
 
 ```typescript
-import { globToSafeRegex } from '@theunwalked/pressurelid';
+import { globToSafeRegex } from '@utilarium/pressurelid';
 
 const { safe, regex, error } = globToSafeRegex('**/*.md');
 

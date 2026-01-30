@@ -81,7 +81,7 @@ Pressurelid provides multiple layers of protection:
 Before a pattern is used, pressurelid analyzes its structure:
 
 ```typescript
-import { SafeRegex } from '@theunwalked/pressurelid';
+import { SafeRegex } from '@utilarium/pressurelid';
 
 const safe = new SafeRegex();
 
