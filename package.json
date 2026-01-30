@@ -1,6 +1,6 @@
 {
   "name": "@utilarium/pressurelid",
-  "version": "1.0.3",
+  "version": "1.0.4-dev.0",
   "description": "Safe regex handling with ReDoS protection - keeps dangerous patterns under pressure.",
   "type": "module",
   "main": "./dist/pressurelid.cjs",
