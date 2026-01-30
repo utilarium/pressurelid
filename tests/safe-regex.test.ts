@@ -129,6 +129,7 @@ describe('SafeRegex', () => {
         it('should call onBlock when pattern is blocked', () => {
             const onBlock = vi.fn();
             const safe = new SafeRegex({ onBlock });
+            // codeql[js/redos]: Intentional ReDoS test vector - pattern is blocked before execution
             safe.create('^(a+)+$');
             expect(onBlock).toHaveBeenCalled();
         });

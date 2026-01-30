@@ -1,0 +1,9 @@
+# CodeQL Configuration
+# Exclude test files from CodeQL analysis
+# Test files intentionally contain ReDoS patterns to verify they are blocked by SafeRegex
+paths-ignore:
+  - '**/tests/**'
+  - '**/*.test.ts'
+  - '**/*.spec.ts'
+  - '**/test/**'
+  - '**/__tests__/**'
