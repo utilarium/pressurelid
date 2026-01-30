@@ -35,6 +35,7 @@ describe('Integration', () => {
 
         it('should protect against malicious user input', () => {
             const safe = new SafeRegex();
+            // codeql[js/redos]: Intentional ReDoS test vectors - patterns are blocked before execution
             const maliciousInputs = [
                 '^(a+)+$',
                 '([a-zA-Z]+)*',
@@ -53,6 +54,7 @@ describe('Integration', () => {
                 onBlock: (_msg, pattern) => blocked.push(pattern),
             });
 
+            // codeql[js/redos]: Intentional ReDoS test vectors - patterns are blocked before execution
             safe.create('^(a+)+$');
             safe.create('^hello$');
             safe.create('([a-z]+)*');
